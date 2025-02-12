@@ -1,6 +1,8 @@
 <?php
 require_once('Alunno.php');
 
+echo"<h1>Alunni:</h1>";
+
 $alunno1 = new Alunno("Lapo","Vanni","18");
 $alunno2 = new Alunno("Franco","Rossi","23");
 $alunni=array();
