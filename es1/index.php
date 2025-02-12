@@ -1,15 +1,16 @@
 <?php
+header("Content-Type: application/json");
 require_once('Alunno.php');
 
-echo"<h1>Alunni:</h1>";
 
-$alunno1 = new Alunno("Lapo","Vanni","18");
-$alunno2 = new Alunno("Franco","Rossi","23");
-$alunni=array();
-array_push($alunni,$alunno1,$alunno2);
+$alunni=[
+    new Alunno("Lapo","Vanni",18),
+    new Alunno("Franco","Rossi",23)
+];
 
-foreach($alunni as $alunno){
+/*foreach($alunni as $alunno){
     $alunno->stampa(); 
     echo '<br>';
-}
+}*/
+echo json_encode($alunni);
 ?>

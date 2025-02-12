@@ -1,9 +1,9 @@
 <?php
-class Alunno {
+class Alunno implements JsonSerializable{
 
 private $nome;
 private $cognome;
- private $eta;
+private $eta;
 
   // Methods
  function alunno($nome,$cognome,$eta) {
@@ -30,6 +30,15 @@ function set_eta($eta) {
 function get_eta() {
     return $this->eta;
 }
+
+public function jsonSerialize(): array {
+    return [
+        'nome' => $this->nome,
+        'cognome' => $this->cognome,
+        'eta' => $this->eta
+    ];
+}
+
 function stampa(){
     echo "{$this->nome} {$this->cognome} {$this->eta}";
 }
