@@ -1,0 +1,48 @@
+[
+    {
+      "nome": "Lapo",
+      "cognome": "Vanni",
+      "eta": 18,
+      "mat": [
+        {
+          "materia": "Matematica",
+          "voto": 9,
+          "descrizione": "un errore"
+        },
+        {
+          "materia": "Storia",
+          "voto": 7,
+          "descrizione": "poteva fare meglio"
+        }
+      ],
+      "ind": {
+        "via": "via giacomo zanella",
+        "numero civico": 34,
+        "cap": 50124
+      },
+      "esito": true
+    },
+    {
+      "nome": "Franco",
+      "cognome": "Rossi",
+      "eta": 23,
+      "mat": [
+        {
+          "materia": "Matematica",
+          "voto": 9,
+          "descrizione": "un errore"
+        },
+        {
+          "materia": "Storia",
+          "voto": 7,
+          "descrizione": "poteva fare meglio"
+        }
+      ],
+      "ind": {
+        "via": "via giacomo zanella",
+        "numero civico": 34,
+        "cap": 50124
+      },
+      "esito": false
+    }
+  ]
